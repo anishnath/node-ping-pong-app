@@ -8,7 +8,6 @@ yarn-error.log
 .parallelperf.*
 .failed-tests
 TEST-results.xml
-package-lock.json
 .eslintcache
 *v8.log
 /lib/
@@ -17,5 +16,5 @@ package-lock.json
 *.idea/*
 dist*
 app/dist/*
-*.js*
 *.js
+*.map
