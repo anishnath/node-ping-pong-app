@@ -1,4 +1,4 @@
-name: Build & PUSH
+name: Build And PUSH
 on:
   push:
     branches: [ "main" ]
