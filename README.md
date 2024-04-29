@@ -21,7 +21,7 @@ Node.js Application
 
 ```bash
 cd app/ping-pong
-docker build -t ping-pong:latest .
+docker build -t anishnath/ping-pong .
 ```
 
 ## Running PingPong Application locally 
@@ -59,3 +59,5 @@ terragrunt apply
 ### (TODO)
 - Add TLS Cert CertBot
 - Deploy Falco/Sysdig on Kubernetes
+- Adding ArgoCD Pipeline
+- Security Alerting
