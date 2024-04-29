@@ -25,6 +25,9 @@ Node.js Application
 - *infrastructure/helm* - Contains the Helm Charts for PingPong Application
 - *infrastructure/us-east-1* - Contains the terraform code for EKS Cluster, Monitoring
 
+## Deployment Architecture EKS
+
+![Deployment Architecture](./ping-pong.png)
 
 ## Building PingPong Application
 
