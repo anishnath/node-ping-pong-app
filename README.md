@@ -20,6 +20,7 @@ Node.js Application
 
 - *app* - Contains the TypeScript ping-pong application
 - *app/terraform* - Deploying Local chart to Kubernetes
+- *cicd* - Contains the K8's yaml file
 - *infrastructure/tf-modules* - Contains the terraform modules for EKS, ALB Ingress , Monitoring
 - *infrastructure/helm* - Contains the Helm Charts for PingPong Application
 - *infrastructure/us-east-1* - Contains the terraform code for EKS Cluster, Monitoring
