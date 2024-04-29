@@ -16,6 +16,14 @@ https://kubernetes-sigs.github.io/aws-load-balancer-controller/v1.1/
 
 Node.js Application
 
+## Folder Structure
+
+- *app* - Contains the TypeScript ping-pong application
+- *app/terraform* - Deploying Local chart to Kubernetes
+- *infrastructure/tf-modules* - Contains the terraform modules for EKS, ALB Ingress , Monitoring
+- *infrastructure/helm* - Contains the Helm Charts for PingPong Application
+- *infrastructure/us-east-1* - Contains the terraform code for EKS Cluster, Monitoring
+
 
 ## Building PingPong Application
 
