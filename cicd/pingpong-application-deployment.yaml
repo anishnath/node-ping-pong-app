@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: ping-pong-application-argocd
+  name: ping-pong-application-deployment
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: app
+    spec:
+      containers:
+        - image: anishnath/ping-pong:f2500bc044669a69d1056761e8b75add742889df
+          imagePullPolicy: Always
+          name: app
+          ports:
+            - containerPort: 3000
