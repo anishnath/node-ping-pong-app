@@ -39,7 +39,7 @@ docker build -t anishnath/ping-pong .
 ## Running PingPong Application locally 
 
 ```bash
-docker run -p 3000:3000 ping-pong:latest
+docker run -p 3000:3000 anishnath/ping-pong
 ```
 
 ## Image Vuln Scanning with Trivy 
