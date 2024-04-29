@@ -94,3 +94,5 @@ terragrunt apply
 - Deploy Falco/Sysdig on Kubernetes
 - Adding ArgoCD Pipeline
 - Security Alerting
+- Route53
+- Custom Certs
