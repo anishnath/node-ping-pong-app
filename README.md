@@ -1,4 +1,4 @@
-# Type Script Node Application
+# Type Script PingPong Application
 
 This module is used to deploy a Node.js application to a Kubernetes cluster. The module will create a deployment, service, and ingress for the application.
 
