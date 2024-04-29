@@ -42,6 +42,27 @@ docker build -t anishnath/ping-pong .
 docker run -p 3000:3000 ping-pong:latest
 ```
 
+## Image Vuln Scanning with Trivy 
+
+TODO this step needs to be Automated
+
+```bash
+➜ rivy  image --severity HIGH,CRITICAL  anishnath/ping-pong:f2500bc044669a69d1056761e8b75add742889df
+2024-04-29T18:57:40.788+0530    INFO    Vulnerability scanning is enabled
+2024-04-29T18:57:40.789+0530    INFO    Secret scanning is enabled
+2024-04-29T18:57:40.789+0530    INFO    If your scanning is slow, please try '--scanners vuln' to disable secret scanning
+2024-04-29T18:57:40.789+0530    INFO    Please see also https://aquasecurity.github.io/trivy/v0.50/docs/scanner/secret/#recommendation for faster secret detection
+2024-04-29T18:57:43.821+0530    INFO    Detected OS: alpine
+2024-04-29T18:57:43.822+0530    INFO    Detecting Alpine vulnerabilities...
+2024-04-29T18:57:43.825+0530    INFO    Number of language-specific files: 1
+2024-04-29T18:57:43.825+0530    INFO    Detecting node-pkg vulnerabilities...
+
+anishnath/ping-pong:f2500bc044669a69d1056761e8b75add742889df (alpine 3.17.6)
+
+Total: 0 (HIGH: 0, CRITICAL: 0)
+
+```
+
 ## Running PingPong Application in Kubernetes
 
 ```bash
